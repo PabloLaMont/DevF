@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+
+Distribucion de columnas::
+
+    grid-template-columns: para definir cuantas columnas y cuanto porcentaje o tamaño la pantalla lleva cada una
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: (x)fr  donde fr significa 
+    fraccion y x es igual al 100 1fr y 1fr es 50 cada una y asi y numeros mayores jalan mas espacio
+
+
+    grid-template-rows: minmax(100, auto)
+    grid-template-rows: (x)fr  donde fr significa 
+    repeat para en lugar de tener que poner multiples veces el valor poder poner cuantas veces y que medida
+
+    min max valor minimo valor maximo del contenido del grid
+
+    Espacio entre columnas
+
+    em = a la unidad de medida base POR NAVEGADOR
+    
+    gap: recibe tamaños y puedes ser row gap o columnas 
+    row-gap: ;
+    column-gap: ;
+
+
+    https://www.adictosaltrabajo.com/2018/01/30/maquetacion-con-css-grid/
+
+    https://css-tricks.com/snippets/css/complete-guide-grid/
+
+    frontendmentor
+
+
+    grid-column:
+    grid-column-start:
+    grid-column-end
+    grid column primera propiedad es el grid column start y end
+
+*/
+
+
+body
+{
+    background-color: cornsilk;
+}
+
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    gap: 0.5em;
+    justify-items: stretch;
+    align-items: strech;
+}
+
+.items
+{
+    background-color: blueviolet;
+    color: black;
+    padding: 10px;
+    border: 1px solid white;
+    /*max-height: aqui va el max del tamaño del item para que no haga overflow ; */
+}
+
+.grid-child
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.especial
+{
+    background-color: aqua;
+    grid-column: 1/3;/* donde 2 es el inicio y 4 es el final pero el final es AL PRINCIPIO de esa columnas */
+    grid-row: 1/4;
+}
+
+/* VERSION TABLET*/
+
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        background-color: tomato;
+    }
+
+    .grid
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/*  VERSION MOBILE */
+
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        background-color: rgb(60, 60, 201);
+    }
+
+    .grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .especial
+    {
+        background-color: chartreuse;
+    }
+}

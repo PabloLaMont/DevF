@@ -1,0 +1,82 @@
+
+/* CLASSES */
+
+body
+{
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-especial
+{
+    color: yellow;
+    font-family: sans-serif;
+    font-weight: bold;    
+    font-size: 25px;
+}
+
+.subrayado
+{
+    text-decoration: underline;
+}
+
+.bg_verde
+{
+    background: rgb(44, 187, 22)
+}
+
+.mi_btn
+{
+    background-color: aqua;
+    color: black;
+    border-radius: 25px;
+    border:none;
+    padding: 10px 25px;
+}
+
+.title
+{
+    background-color: wheat;
+}
+
+h1
+{
+    font-size: 3em;
+    background-color: tomato!important;   
+}
+/* en este caso .title es primero por lo tanto lo tomaria primero PERO como tomato tiene important toma ese*/
+
+
+/* SELECTORES Y PADRES EL HIJOS  A LA DERECHA DIVIDIDOS POR PUNTOS */
+
+body .cart .product
+{
+    background-color: brown;
+}
+
+.cart p
+{
+    color:goldenrod;
+}
+
+/* IDS */
+
+#id
+{
+    margin: 2px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+#mi_btn
+{
+    background-color: aqua;
+    color: black;
+    border-radius: 25px;
+    border:none;
+    padding: 10px 25px;
+}
+
+
+

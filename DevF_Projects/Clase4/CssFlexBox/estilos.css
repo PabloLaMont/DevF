@@ -1,0 +1,16 @@
+.contenedor-padre
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    margin: 5%;
+}
+
+
+img
+{
+    height: 20%;
+    width: 20%;
+    border-radius: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,180 @@
+*
+{
+    margin:0;
+}
+
+body
+{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Header
+{
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.Header a
+{
+    margin-right: 20px;
+    color: rgba(12, 3, 3, 0.87);
+    font-size: 15px;
+    text-decoration: inherit;
+}
+
+.Header a:hover
+{
+    text-decoration: underline;
+}
+
+.header_right
+{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-items: space-between;
+}
+
+.header_left
+{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-items: space-between;
+}
+
+.header_right .iconApp
+{
+    margin-right: 15px;
+}
+
+
+.MainBody
+{
+    display: flex;
+    flex: 1;
+    margin-top: 12%;
+    flex-direction: column;
+}
+
+.MainBody img
+{
+    object-fit: contain;
+    height: 150px;
+}
+
+
+
+.search_input
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+.search_input input
+{
+    flex:1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.search_input .material-symbols-outlined
+{
+    color:gray;
+}
+
+.search_Buttons
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_Buttons button
+{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+.footer
+{
+    background-color: rgb(66, 66, 66);
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.footer a
+{
+    font-size: 15px;
+    text-decoration:none;
+    color: rgb(175, 175, 175);
+}
+
+.region
+{
+    padding: 10px;
+    display: flex;
+    align-items: left;
+    justify-items: space-between;
+    
+}
+
+.region a
+{
+    margin: 8px;
+}
+
+.footer2
+{
+    padding: 10px;
+    display: flex;
+    justify-items: space-between;
+}
+
+.derecho
+{
+    display: flex;
+    align-items: left;
+    justify-items: space-between;
+}
+
+.derecho a
+{
+    margin: 8px;
+}
+
+.izquierdo
+{
+    margin-left: 50%;
+    display: flex;
+    align-items: right;
+    justify-items: space-between;
+}
+
+.izquierdo a
+{
+    margin: 8px;
+}
+

@@ -1,0 +1,18 @@
+.contenedor-padre
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items:unset;
+}
+
+.elemento-hijo
+{
+    background-color: blue;
+    border: 1px solid;
+    color: white;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+
+}
