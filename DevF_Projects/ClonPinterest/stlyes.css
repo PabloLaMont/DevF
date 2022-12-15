@@ -16,15 +16,29 @@
     font-family: "Poppins",sans-serif;
 }
 
+.logo_pin img
+{
+    width: 50px;
+    height: 30px;
+}
+
+.logo_pin 
+{
+    border: none;
+}
+
+.logo_pin:hover
+{
+    cursor: pointer;
+}
+
+
 .pin_container /*DEFINIMOS EL GRID*/
 {
+   
     margin: 0;
     padding: 0;
     width: 100vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
@@ -274,7 +288,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(10,1fr);
     opacity: 0;
-    border-radius: var(--card_border_radius);
+
     transition: .7s;
 }
 
@@ -484,8 +498,15 @@
 EMEPZAMOS EL STYLE DE LA PAGINA
 */
 
+nav
+{
+    top: 0;
+    position: sticky;
+}
+
 .header
 {
+   
     display: flex;
     justify-content: space-between;
     padding: 40px 65px;
@@ -558,4 +579,17 @@ EMEPZAMOS EL STYLE DE LA PAGINA
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+
+
+@media screen and (max-width: 600px) 
+{
+    .searching_bar
+    {
+        display: none;
+    }
+    .header_left
+    {
+        display: none;
+    }
 }
