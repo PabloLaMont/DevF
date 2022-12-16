@@ -45,6 +45,7 @@
     justify-content: center;
 
     background-color: rgb(255, 255, 255);
+    z-index: 0;
 }
 
 .card /*DEFINIMOS LA CARTA*/
@@ -502,6 +503,7 @@ nav
 {
     top: 0;
     position: sticky;
+    z-index: 1;
 }
 
 .header
