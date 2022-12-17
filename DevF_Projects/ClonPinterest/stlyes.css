@@ -6,6 +6,7 @@
     --card_small: 26;
     --card_medium: 33;
     --card_large: 45;
+    --link_margin: 23px;
 }
 
 * /* RESETEAMOS EL TODO Y DEFINIMOS LA LETRA*/
@@ -100,7 +101,7 @@
     grid-column-start: 1;
 
     margin-bottom: 18px;
-    padding: 10px 10px;
+    padding: 10px var(--link_margin);
     justify-self: center;
 
     font-size: 10px;
@@ -214,7 +215,7 @@
     grid-column-start: 1;
 
     margin-bottom: 14px;
-    padding: 10px 10px;
+    padding: 10px var(--link_margin);
     justify-self: center;
 
     font-size: 10px;
@@ -326,7 +327,7 @@
     grid-column-start: 1;
 
     margin-bottom: 12px;
-    padding: 10px 10px;
+    padding: 10px var(--link_margin);
     justify-self: center;
 
     font-size: 10px;
