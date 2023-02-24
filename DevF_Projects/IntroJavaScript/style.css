@@ -1,0 +1,15 @@
+button
+{
+    background-color: green;
+    color: white;
+    border: 0;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;    
+}
+
+button:hover
+{
+    cursor:pointer;
+    transform: scale(1.5);    
+}
