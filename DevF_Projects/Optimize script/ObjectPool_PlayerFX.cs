@@ -68,48 +68,34 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
 	// Use this for initialization
 	void Awake()
 	{
-
         #if UNITY_EDITOR
-
         if (!UnityEditor.EditorApplication.isPlaying)
         {
             return;
         }
-
         #endif
-
         ContainerObject = this.gameObject;//new GameObject("ObjectPool");
-
 		//Loop through the object prefabs and make a new list for each one.
 		//We do this because the pool can only support prefabs set to it in the editor,
 		//so we can assume the lists of pooled objects are in the same order as object prefabs in the array
-
 		int max = Entries.Length;
-
 		for (int i = 0; i < max; i++)
 		{
 			ObjectPoolEntry objectPrefab = Entries[i];
-
 			//create the repository
 			//objectPrefab.pool = new GameObject[objectPrefab.Count];
-
 			#if UNITY_EDITOR
 			objectPrefab.Count = 1;
 			#endif
-
 			
 			objectPrefab.pool = new List<GameObject>(new GameObject[objectPrefab.Count]);
 			objectPrefab.objectsInPool = 0;
 			
-
 			TestObje(objectPrefab);
 			//fill it               
-
 		}
 		ObjectPool_Dynamic.instance.AvisaSceneControllerTerminoPools(this.name);
 	}
-
-
 	*/
 
 	
@@ -153,12 +139,10 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
 	 }	 
 	 
 	/*
-
 	void Awake()
 	{
 		ContainerObject = this.gameObject;
 		int max = Entries.Length;
-
 		for (int i = 0; i < max; i++)
 		{
 			ObjectPoolEntry objectPrefab = Entries[i];
@@ -168,10 +152,8 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
         
 			StartCoroutine(RunListRutine(objectPrefab));
 		}
-
 		ObjectPool_Dynamic.instance.AvisaSceneControllerTerminoPools(this.name);
 	}
-
 	private IEnumerator RunListRutine(ObjectPoolEntry objectPrefab) 
 	{
 		int max = objectPrefab.Count;
@@ -179,7 +161,6 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
     
 		GameObject prefab = objectPrefab.Prefab;
     
-
 		for (int n = 0; n < max; n += objectsPerFrame)
 		{
 			for (int j = n; j < n + objectsPerFrame && j < max; j++)
@@ -191,18 +172,14 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
 				yield return null;
 			}
 		}
-
 		//ObjectPool_Dynamic.instance.AvisaSceneControllerTerminoPools(this.name);
 	} 
-
 	
-
 	private void TestObje(ObjectPoolEntry objectPrefab) 
 	{
 		int max = objectPrefab.Count;
 		GameObject prefab = objectPrefab.Prefab;
 	
-
 		for (int n = 0; n < max; n++)
 		{
 			GameObject newObj = Instantiate(prefab);
@@ -211,7 +188,6 @@ public class ObjectPool_PlayerFX : ObjectPoolBase{
 			PoolObject(newObj, true);
 		}
 	}
-
 	*/
 
 	public void RegeneraObjectPool()
