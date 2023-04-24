@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos de alumnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Buscar por nombre o apellido">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section id="students-container">
+            <h2>Alumnos</h2>
+        </section>
+
+        <section id="search-results-container">
+            <h2>Resultados de búsqueda</h2>
+        </section>
+        
+        <aside>
+            <form id="student-form">
+                <h2>Crear Alumno</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required>
+                <button type="submit">Crear</button>
+            </form>
+
+            <form id="inscripcion-form">
+                <h2>Inscribir Materia</h2>
+                <label for="student-nombre-inscripcion">Nombre:</label>
+                <input type="text" id="student-nombre-inscripcion" required>
+                <label for="student-apellidos-inscripcion">Apellidos:</label>
+                <input type="text" id="student-apellidos-inscripcion" required>
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" required>
+                <button type="submit">Inscribir</button>
+            </form>
+
+            <form id="calificacion-form">
+                <h2>Asignar Calificación</h2>
+                <label for="student-nombre-calificacion">Nombre:</label>
+                <input type="text" id="student-nombre-calificacion" required>
+                <label for="student-apellidos-calificacion">Apellidos:</label>
+                <input type="text" id="student-apellidos-calificacion" required>
+                <label for="materia-calificacion">Materia:</label>
+                <input type="text" id="materia-calificacion" required>
+                <label for="calificacion">Calificación:</label>
+                <input type="number" step="0.01" id="calificacion" required>
+                <button type="submit">Asignar</button>
+            </form>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
